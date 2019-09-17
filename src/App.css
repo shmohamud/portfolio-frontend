@@ -1,0 +1,17 @@
+  a:link {
+    font-size: 20px;
+    color: black;
+    padding: 0px 60px 0px 0px;
+    display: inline-block;
+    text-decoration: none;
+    word-wrap: normal;
+  }
+
+  nav div {
+      text-align: center
+  }
+
+ nav img {
+    padding: 0px 100px 0px 0px 
+ }
+ 

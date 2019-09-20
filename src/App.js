@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./NavBar";
-import Home from "./Home";
+import HomeContainer from "./HomeContainer";
 import Demos from "./Demos";
+import Navbar from './NavBar'
+import {Row} from 'react-bootstrap'
 import { Route, withRouter } from "react-router-dom";
 
 function App() {
@@ -13,8 +14,10 @@ function App() {
         path="/"
         render={props => (
           <div>
-            <NavBar />
-            <Home />
+            <Row>
+          <Navbar/>
+          </Row>
+         <HomeContainer/>
           </div>
         )}
       />
@@ -23,8 +26,8 @@ function App() {
         path="/home"
         render={props => (
           <div>
-            <NavBar />
-            <Home />
+            <Navbar />
+            <HomeContainer />
           </div>
         )}
       />
@@ -33,7 +36,8 @@ function App() {
         path="/demos"
         render={props => (
           <div>
-            <NavBar />
+           
+            <Navbar />
             <Demos />
           </div>
         )}

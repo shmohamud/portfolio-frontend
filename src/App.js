@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import HomeContainer from "./HomeContainer";
 import Demos from "./Demos";
-import Navbar from './NavBar'
-import {Row} from 'react-bootstrap'
+import Navbar from "./NavBar";
+import { Row } from "react-bootstrap";
 import { Route, withRouter } from "react-router-dom";
 
 function App() {
@@ -14,10 +14,9 @@ function App() {
         path="/"
         render={props => (
           <div>
-            <Row>
-          <Navbar/>
-          </Row>
-         <HomeContainer/>
+            <Navbar />
+
+            <HomeContainer />
           </div>
         )}
       />
@@ -36,7 +35,6 @@ function App() {
         path="/demos"
         render={props => (
           <div>
-           
             <Navbar />
             <Demos />
           </div>

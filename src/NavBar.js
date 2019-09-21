@@ -9,8 +9,8 @@ const NavBar = props => {
     <Fragment>
       <Navbar bg="light" variant='light' expand="lg">
         <Nav>
-          <div style={{display:'flex', textAlign:'none', justifyContent:'center'}}> 
-            <Container>
+          <div style={{display:'flex', justifyContent:'space-around'}}> 
+      
             <LinkContainer to="/home">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
@@ -26,7 +26,7 @@ const NavBar = props => {
             <LinkContainer to="/contact">
               <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
-            </Container>
+           
           </div>
         </Nav>
       </Navbar>
